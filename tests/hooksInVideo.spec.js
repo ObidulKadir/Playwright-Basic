@@ -8,6 +8,8 @@ import { test, expect, chromium } from '@playwright/test';
 Note: open a new page within the context.
     const page = await context.newPage(); // Open a new page within the context
 
+    you can inject the playwright in the test block, but for that test there are no new browser will open and new video will record
+
 */
 
 let browser
@@ -22,7 +24,7 @@ test.describe('Video Recording Tests', () => {
         });
         context = await browser.newContext({
             recordVideo: {
-                dir: 'VideosHooks/'
+                dir: 'VideosHooks2/'
             }
         })
     })
@@ -31,7 +33,7 @@ test.describe('Video Recording Tests', () => {
         await browser.close()
     })
     test('Text Assertion', async ({ }) => {
-        const page = await context.newPage();
+        const page = await context.newPage()
         await page.goto('https://www.saucedemo.com/v1/');
         await page.locator('[data-test="username"]').click();
         await page.locator('[data-test="username"]').fill('standard_user');
