@@ -17,7 +17,7 @@ test('test', async ({ page }) => {
 
     for (const productName of targetProduct) {
         const index = productNames.indexOf(productName)
-
+        
         if (index != -1) {
             await page.locator('.inventory_item_name').nth(index).click()
             await page.getByRole('button', { name: 'ADD TO CART' }).click();
