@@ -1,0 +1,1 @@
+[{"uid":"3ea570f95bf41d8d","name":"Verify Google title","time":{"start":1742578300218,"stop":1742578301945,"duration":1727},"status":"passed","severity":"normal"},{"uid":"ef489aaa7c0f41c9","name":"Verify YouTube title","time":{"start":1742578300219,"stop":1742578309123,"duration":8904},"status":"failed","severity":"normal"}]

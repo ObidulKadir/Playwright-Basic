@@ -1,0 +1,79 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Verify YouTube title
+- Location: D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\Allure_Reports.spec.js:13:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+Locator: locator(':root')
+Expected pattern: /YoTube/
+Received string:  "YouTube"
+Call log:
+  - expect.toHaveTitle with timeout 5000ms
+  - waiting for locator(':root')
+    8 × locator resolved to <html lang="en" refresh="" typography="" system-icons="" darker-dark-theme="" typography-spacing="" darker-dark-theme-deprecate="">…</html>
+      - unexpected value "YouTube"
+
+    at D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\Allure_Reports.spec.js:15:24
+```
+
+# Page snapshot
+
+```yaml
+- dialog
+- banner:
+  - button "Guide"
+  - link "YouTube Home"
+  - text: BD
+  - button "Skip navigation"
+  - search:
+    - combobox "Search" [expanded]
+    - button "Search"
+  - button "Search with your voice"
+  - tooltip "tooltip"
+  - button "Settings"
+  - link "Sign in"
+- navigation:
+  - tab "Home" [selected]:
+    - link "Home"
+  - tab "Shorts"
+  - tab "Subscriptions":
+    - link "Subscriptions"
+  - tab "You":
+    - link "You"
+  - tab "History":
+    - link "History"
+- main: Try searching to get started Start watching videos to help us build a feed of videos you'll love.
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | /*
+   4 |
+   5 |
+   6 | */
+   7 |
+   8 | test('Verify Google title', async ({ page }) => {
+   9 |     await page.goto('https://www.google.com');
+  10 |     await expect(page).toHaveTitle(/Google/);
+  11 | });
+  12 |
+  13 | test('Verify YouTube title', async ({ page }) => {
+  14 |     await page.goto('https://www.youtube.com');
+> 15 |     await expect(page).toHaveTitle(/YoTube/);
+     |                        ^ Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+  16 | });
+  17 |
+```
