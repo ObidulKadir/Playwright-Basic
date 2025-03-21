@@ -1,0 +1,228 @@
+{
+  "config": {
+    "configFile": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\playwright.config.js",
+    "rootDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "my-report2.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "my-report"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "junits.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/PersonalSpace/PracticeSpace/Playwright/Playwright-Basic/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.51.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Reports.spec.js",
+      "file": "Reports.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Google title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-21T17:11:29.402Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f6215677f22149423fce-90911f7042b805d2377e",
+          "file": "Reports.spec.js",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Verify YouTube title",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 7792,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YuTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YuTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n\n    at D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Reports.spec.js:10:24",
+                    "matcherResult": {
+                      "name": "toHaveTitle",
+                      "expected": {},
+                      "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YuTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n",
+                      "pass": false,
+                      "actual": "YouTube",
+                      "log": [
+                        "  - expect.toHaveTitle with timeout 5000ms",
+                        "  - waiting for locator(':root')",
+                        "    9 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>",
+                        "      - unexpected value \"YouTube\""
+                      ],
+                      "timeout": 5000
+                    },
+                    "location": {
+                      "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Reports.spec.js",
+                      "column": 24,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m test(\u001b[32m'Verify YouTube title'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.youtube.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/YuTube/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Reports.spec.js",
+                        "column": 24,
+                        "line": 10
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YuTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test(\u001b[32m'Verify YouTube title'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.youtube.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/YuTube/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Reports.spec.js:10:24\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-21T17:11:29.420Z",
+                  "attachments": [
+                    {
+                      "name": "_prompt-0",
+                      "contentType": "text/markdown",
+                      "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBWZXJpZnkgWW91VHViZSB0aXRsZQotIExvY2F0aW9uOiBEOlxQZXJzb25hbFNwYWNlXFByYWN0aWNlU3BhY2VcUGxheXdyaWdodFxQbGF5d3JpZ2h0LUJhc2ljXHRlc3RzXFJlcG9ydHMuc3BlYy5qczo4OjUKCiMgRXJyb3IgZGV0YWlscwoKYGBgCkVycm9yOiBUaW1lZCBvdXQgNTAwMG1zIHdhaXRpbmcgZm9yIGV4cGVjdChsb2NhdG9yKS50b0hhdmVUaXRsZShleHBlY3RlZCkKCkxvY2F0b3I6IGxvY2F0b3IoJzpyb290JykKRXhwZWN0ZWQgcGF0dGVybjogL1l1VHViZS8KUmVjZWl2ZWQgc3RyaW5nOiAgIllvdVR1YmUiCkNhbGwgbG9nOgogIC0gZXhwZWN0LnRvSGF2ZVRpdGxlIHdpdGggdGltZW91dCA1MDAwbXMKICAtIHdhaXRpbmcgZm9yIGxvY2F0b3IoJzpyb290JykKICAgIDkgw5cgbG9jYXRvciByZXNvbHZlZCB0byA8aHRtbCBsYW5nPSJlbiIgcmVmcmVzaD0iIiB0eXBvZ3JhcGh5PSIiIHN5c3RlbS1pY29ucz0iIiBkYXJrZXItZGFyay10aGVtZT0iIiB0eXBvZ3JhcGh5LXNwYWNpbmc9IiIgZGFya2VyLWRhcmstdGhlbWUtZGVwcmVjYXRlPSIiPuKApjwvaHRtbD4KICAgICAgLSB1bmV4cGVjdGVkIHZhbHVlICJZb3VUdWJlIgoKICAgIGF0IEQ6XFBlcnNvbmFsU3BhY2VcUHJhY3RpY2VTcGFjZVxQbGF5d3JpZ2h0XFBsYXl3cmlnaHQtQmFzaWNcdGVzdHNcUmVwb3J0cy5zcGVjLmpzOjEwOjI0CmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gZGlhbG9nCi0gYmFubmVyOgogIC0gYnV0dG9uICJHdWlkZSIKICAtIGxpbmsgIllvdVR1YmUgSG9tZSIKICAtIHRleHQ6IEJECiAgLSBidXR0b24gIlNraXAgbmF2aWdhdGlvbiIKICAtIHNlYXJjaDoKICAgIC0gY29tYm9ib3ggIlNlYXJjaCIgW2V4cGFuZGVkXQogICAgLSBidXR0b24gIlNlYXJjaCIKICAtIGJ1dHRvbiAiU2VhcmNoIHdpdGggeW91ciB2b2ljZSIKICAtIHRvb2x0aXAgInRvb2x0aXAiCiAgLSBidXR0b24gIlNldHRpbmdzIgogIC0gbGluayAiU2lnbiBpbiIKLSBuYXZpZ2F0aW9uOgogIC0gdGFiICJIb21lIiBbc2VsZWN0ZWRdOgogICAgLSBsaW5rICJIb21lIgogIC0gdGFiICJTaG9ydHMiCiAgLSB0YWIgIlN1YnNjcmlwdGlvbnMiOgogICAgLSBsaW5rICJTdWJzY3JpcHRpb25zIgogIC0gdGFiICJZb3UiOgogICAgLSBsaW5rICJZb3UiCiAgLSB0YWIgIkhpc3RvcnkiOgogICAgLSBsaW5rICJIaXN0b3J5IgotIG1haW46IFRyeSBzZWFyY2hpbmcgdG8gZ2V0IHN0YXJ0ZWQgU3RhcnQgd2F0Y2hpbmcgdmlkZW9zIHRvIGhlbHAgdXMgYnVpbGQgYSBmZWVkIG9mIHZpZGVvcyB5b3UnbGwgbG92ZS4KYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgdGVzdCwgZXhwZWN0IH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfAogICAzIHwgdGVzdCgnVmVyaWZ5IEdvb2dsZSB0aXRsZScsIGFzeW5jICh7IHBhZ2UgfSkgPT4gewogICA0IHwgICAgIGF3YWl0IHBhZ2UuZ290bygnaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbScpOwogICA1IHwgICAgIGF3YWl0IGV4cGVjdChwYWdlKS50b0hhdmVUaXRsZSgvR29vZ2xlLyk7CiAgIDYgfCB9KTsKICAgNyB8CiAgIDggfCB0ZXN0KCdWZXJpZnkgWW91VHViZSB0aXRsZScsIGFzeW5jICh7IHBhZ2UgfSkgPT4gewogICA5IHwgICAgIGF3YWl0IHBhZ2UuZ290bygnaHR0cHM6Ly93d3cueW91dHViZS5jb20nKTsKPiAxMCB8ICAgICBhd2FpdCBleHBlY3QocGFnZSkudG9IYXZlVGl0bGUoL1l1VHViZS8pOwogICAgIHwgICAgICAgICAgICAgICAgICAgICAgICBeIEVycm9yOiBUaW1lZCBvdXQgNTAwMG1zIHdhaXRpbmcgZm9yIGV4cGVjdChsb2NhdG9yKS50b0hhdmVUaXRsZShleHBlY3RlZCkKICAxMSB8IH0pOwogIDEyIHwKYGBg"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Reports.spec.js",
+                    "column": 24,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f6215677f22149423fce-9d3ddc3b7df0896ef73c",
+          "file": "Reports.spec.js",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-21T17:11:28.222Z",
+    "duration": 9278.937,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

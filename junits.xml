@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="9.278936999999999">
+<testsuite name="Reports.spec.js" timestamp="2025-03-21T17:11:28.261Z" hostname="chromium" tests="2" failures="1" skipped="0" time="9.235" errors="0">
+<testcase name="Verify Google title" classname="Reports.spec.js" time="1.443">
+</testcase>
+<testcase name="Verify YouTube title" classname="Reports.spec.js" time="7.792">
+<failure message="Reports.spec.js:8:5 Verify YouTube title" type="FAILURE">
+<![CDATA[  [chromium] › Reports.spec.js:8:5 › Verify YouTube title ──────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /YuTube/
+    Received string:  "YouTube"
+    Call log:
+      - expect.toHaveTitle with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html lang="en" refresh="" typography="" system-icons="" darker-dark-theme="" typography-spacing="" darker-dark-theme-deprecate="">…</html>
+          - unexpected value "YouTube"
+
+
+       8 | test('Verify YouTube title', async ({ page }) => {
+       9 |     await page.goto('https://www.youtube.com');
+    > 10 |     await expect(page).toHaveTitle(/YuTube/);
+         |                        ^
+      11 | });
+      12 |
+        at D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\Reports.spec.js:10:24
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
