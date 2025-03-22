@@ -1,32 +1,14 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="9.858529">
-<testsuite name="Allure_Reports.spec.js" timestamp="2025-03-21T17:31:39.587Z" hostname="chromium" tests="2" failures="1" skipped="0" time="10.631" errors="0">
-<testcase name="Verify Google title" classname="Allure_Reports.spec.js" time="1.727">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="0.938951">
+<testsuite name="API_Test.spec.js" timestamp="2025-03-22T05:02:01.046Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.128" errors="0">
+<testcase name="Demo Api test : Get" classname="API_Test.spec.js" time="0.128">
 </testcase>
-<testcase name="Verify YouTube title" classname="Allure_Reports.spec.js" time="8.904">
-<failure message="Allure_Reports.spec.js:13:5 Verify YouTube title" type="FAILURE">
-<![CDATA[  [chromium] › Allure_Reports.spec.js:13:5 › Verify YouTube title ──────────────────────────────────
-
-    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
-
-    Locator: locator(':root')
-    Expected pattern: /YoTube/
-    Received string:  "YouTube"
-    Call log:
-      - expect.toHaveTitle with timeout 5000ms
-      - waiting for locator(':root')
-        8 × locator resolved to <html lang="en" refresh="" typography="" system-icons="" darker-dark-theme="" typography-spacing="" darker-dark-theme-deprecate="">…</html>
-          - unexpected value "YouTube"
-
-
-      13 | test('Verify YouTube title', async ({ page }) => {
-      14 |     await page.goto('https://www.youtube.com');
-    > 15 |     await expect(page).toHaveTitle(/YoTube/);
-         |                        ^
-      16 | });
-      17 |
-        at D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\Allure_Reports.spec.js:15:24
-]]>
-</failure>
+</testsuite>
+<testsuite name="API_Test.spec.js" timestamp="2025-03-22T05:02:01.046Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.144" errors="0">
+<testcase name="Demo Api test : Get" classname="API_Test.spec.js" time="0.144">
+</testcase>
+</testsuite>
+<testsuite name="API_Test.spec.js" timestamp="2025-03-22T05:02:01.046Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.107" errors="0">
+<testcase name="Demo Api test : Get" classname="API_Test.spec.js" time="0.107">
 </testcase>
 </testsuite>
 </testsuites>

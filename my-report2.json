@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -65,7 +65,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 3
         },
         "id": "firefox",
         "name": "firefox",
@@ -81,7 +81,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 3
         },
         "id": "webkit",
         "name": "webkit",
@@ -102,13 +102,13 @@
   },
   "suites": [
     {
-      "title": "Allure_Reports.spec.js",
-      "file": "Allure_Reports.spec.js",
+      "title": "API_Test.spec.js",
+      "file": "API_Test.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Google title",
+          "title": "Demo Api test : Get",
           "ok": true,
           "tags": [],
           "tests": [
@@ -123,98 +123,87 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1727,
+                  "duration": 128,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-21T17:31:40.202Z",
+                  "startTime": "2025-03-22T05:02:01.762Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "867f21c26bb0545bca71-55d9595851ef87e1c430",
-          "file": "Allure_Reports.spec.js",
-          "line": 8,
+          "id": "3bd4876368bf32432a06-888f7b837f4f54efebf4",
+          "file": "API_Test.spec.js",
+          "line": 4,
           "column": 5
         },
         {
-          "title": "Verify YouTube title",
-          "ok": false,
+          "title": "Demo Api test : Get",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "firefox",
+              "projectName": "firefox",
               "results": [
                 {
                   "workerIndex": 1,
                   "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 8904,
-                  "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YoTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YoTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n\n    at D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Allure_Reports.spec.js:15:24",
-                    "matcherResult": {
-                      "name": "toHaveTitle",
-                      "expected": {},
-                      "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YoTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n",
-                      "pass": false,
-                      "actual": "YouTube",
-                      "log": [
-                        "  - expect.toHaveTitle with timeout 5000ms",
-                        "  - waiting for locator(':root')",
-                        "    8 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>",
-                        "      - unexpected value \"YouTube\""
-                      ],
-                      "timeout": 5000
-                    },
-                    "location": {
-                      "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Allure_Reports.spec.js",
-                      "column": 24,
-                      "line": 15
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 13 |\u001b[39m test(\u001b[32m'Verify YouTube title'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.youtube.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/YoTube/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Allure_Reports.spec.js",
-                        "column": 24,
-                        "line": 15
-                      },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/YoTube/\u001b[39m\nReceived string:  \u001b[31m\"YouTube\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html lang=\"en\" refresh=\"\" typography=\"\" system-icons=\"\" darker-dark-theme=\"\" typography-spacing=\"\" darker-dark-theme-deprecate=\"\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"YouTube\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 13 |\u001b[39m test(\u001b[32m'Verify YouTube title'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.youtube.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/YoTube/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Allure_Reports.spec.js:15:24\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 144,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-21T17:31:40.204Z",
-                  "attachments": [
-                    {
-                      "name": "_prompt-0",
-                      "contentType": "text/markdown",
-                      "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBWZXJpZnkgWW91VHViZSB0aXRsZQotIExvY2F0aW9uOiBEOlxQZXJzb25hbFNwYWNlXFByYWN0aWNlU3BhY2VcUGxheXdyaWdodFxQbGF5d3JpZ2h0LUJhc2ljXHRlc3RzXEFsbHVyZV9SZXBvcnRzLnNwZWMuanM6MTM6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IFRpbWVkIG91dCA1MDAwbXMgd2FpdGluZyBmb3IgZXhwZWN0KGxvY2F0b3IpLnRvSGF2ZVRpdGxlKGV4cGVjdGVkKQoKTG9jYXRvcjogbG9jYXRvcignOnJvb3QnKQpFeHBlY3RlZCBwYXR0ZXJuOiAvWW9UdWJlLwpSZWNlaXZlZCBzdHJpbmc6ICAiWW91VHViZSIKQ2FsbCBsb2c6CiAgLSBleHBlY3QudG9IYXZlVGl0bGUgd2l0aCB0aW1lb3V0IDUwMDBtcwogIC0gd2FpdGluZyBmb3IgbG9jYXRvcignOnJvb3QnKQogICAgOCDDlyBsb2NhdG9yIHJlc29sdmVkIHRvIDxodG1sIGxhbmc9ImVuIiByZWZyZXNoPSIiIHR5cG9ncmFwaHk9IiIgc3lzdGVtLWljb25zPSIiIGRhcmtlci1kYXJrLXRoZW1lPSIiIHR5cG9ncmFwaHktc3BhY2luZz0iIiBkYXJrZXItZGFyay10aGVtZS1kZXByZWNhdGU9IiI+4oCmPC9odG1sPgogICAgICAtIHVuZXhwZWN0ZWQgdmFsdWUgIllvdVR1YmUiCgogICAgYXQgRDpcUGVyc29uYWxTcGFjZVxQcmFjdGljZVNwYWNlXFBsYXl3cmlnaHRcUGxheXdyaWdodC1CYXNpY1x0ZXN0c1xBbGx1cmVfUmVwb3J0cy5zcGVjLmpzOjE1OjI0CmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gZGlhbG9nCi0gYmFubmVyOgogIC0gYnV0dG9uICJHdWlkZSIKICAtIGxpbmsgIllvdVR1YmUgSG9tZSIKICAtIHRleHQ6IEJECiAgLSBidXR0b24gIlNraXAgbmF2aWdhdGlvbiIKICAtIHNlYXJjaDoKICAgIC0gY29tYm9ib3ggIlNlYXJjaCIgW2V4cGFuZGVkXQogICAgLSBidXR0b24gIlNlYXJjaCIKICAtIGJ1dHRvbiAiU2VhcmNoIHdpdGggeW91ciB2b2ljZSIKICAtIHRvb2x0aXAgInRvb2x0aXAiCiAgLSBidXR0b24gIlNldHRpbmdzIgogIC0gbGluayAiU2lnbiBpbiIKLSBuYXZpZ2F0aW9uOgogIC0gdGFiICJIb21lIiBbc2VsZWN0ZWRdOgogICAgLSBsaW5rICJIb21lIgogIC0gdGFiICJTaG9ydHMiCiAgLSB0YWIgIlN1YnNjcmlwdGlvbnMiOgogICAgLSBsaW5rICJTdWJzY3JpcHRpb25zIgogIC0gdGFiICJZb3UiOgogICAgLSBsaW5rICJZb3UiCiAgLSB0YWIgIkhpc3RvcnkiOgogICAgLSBsaW5rICJIaXN0b3J5IgotIG1haW46IFRyeSBzZWFyY2hpbmcgdG8gZ2V0IHN0YXJ0ZWQgU3RhcnQgd2F0Y2hpbmcgdmlkZW9zIHRvIGhlbHAgdXMgYnVpbGQgYSBmZWVkIG9mIHZpZGVvcyB5b3UnbGwgbG92ZS4KYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgdGVzdCwgZXhwZWN0IH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfAogICAzIHwgLyoKICAgNCB8CiAgIDUgfAogICA2IHwgKi8KICAgNyB8CiAgIDggfCB0ZXN0KCdWZXJpZnkgR29vZ2xlIHRpdGxlJywgYXN5bmMgKHsgcGFnZSB9KSA9PiB7CiAgIDkgfCAgICAgYXdhaXQgcGFnZS5nb3RvKCdodHRwczovL3d3dy5nb29nbGUuY29tJyk7CiAgMTAgfCAgICAgYXdhaXQgZXhwZWN0KHBhZ2UpLnRvSGF2ZVRpdGxlKC9Hb29nbGUvKTsKICAxMSB8IH0pOwogIDEyIHwKICAxMyB8IHRlc3QoJ1ZlcmlmeSBZb3VUdWJlIHRpdGxlJywgYXN5bmMgKHsgcGFnZSB9KSA9PiB7CiAgMTQgfCAgICAgYXdhaXQgcGFnZS5nb3RvKCdodHRwczovL3d3dy55b3V0dWJlLmNvbScpOwo+IDE1IHwgICAgIGF3YWl0IGV4cGVjdChwYWdlKS50b0hhdmVUaXRsZSgvWW9UdWJlLyk7CiAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgIF4gRXJyb3I6IFRpbWVkIG91dCA1MDAwbXMgd2FpdGluZyBmb3IgZXhwZWN0KGxvY2F0b3IpLnRvSGF2ZVRpdGxlKGV4cGVjdGVkKQogIDE2IHwgfSk7CiAgMTcgfApgYGA="
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\PersonalSpace\\PracticeSpace\\Playwright\\Playwright-Basic\\tests\\Allure_Reports.spec.js",
-                    "column": 24,
-                    "line": 15
-                  }
+                  "startTime": "2025-03-22T05:02:01.761Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "867f21c26bb0545bca71-f7194c098991e5628b58",
-          "file": "Allure_Reports.spec.js",
-          "line": 13,
+          "id": "3bd4876368bf32432a06-0fc5cbb4f22ecea269d7",
+          "file": "API_Test.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Demo Api test : Get",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-22T05:02:01.778Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3bd4876368bf32432a06-cf3b151cd05129168b33",
+          "file": "API_Test.spec.js",
+          "line": 4,
           "column": 5
         }
       ]
@@ -222,11 +211,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-21T17:31:39.552Z",
-    "duration": 9858.529,
-    "expected": 1,
+    "startTime": "2025-03-22T05:02:01.009Z",
+    "duration": 938.951,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

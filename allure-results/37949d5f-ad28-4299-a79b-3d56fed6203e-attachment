@@ -1,0 +1,36 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Demo Api test : Get
+- Location: D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\API_Test.spec.js:4:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "200"
+Received: 200
+    at D:\PersonalSpace\PracticeSpace\Playwright\Playwright-Basic\tests\API_Test.spec.js:8:31
+```
+
+# Test source
+
+```ts
+   1 | import {test, expect} from '@playwright/test'
+   2 |
+   3 |
+   4 | test('Demo Api test : Get', async({request}) => { 
+   5 |     
+   6 |     const response= await request.get('https://reqres.in/api/users/2')
+   7 |
+>  8 |     expect(response.status()).toBe('200')
+     |                               ^ Error: expect(received).toBe(expected) // Object.is equality
+   9 |
+  10 | })
+```
